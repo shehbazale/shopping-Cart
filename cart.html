@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Section</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+          <div class="panel-all border ">
+            <i class="fa-solid fa-bars bar"></i>
+          </div>
+          <div class="nav-logo border">
+            <div class="logo"></div>
+          </div>
+          <div class="nav-search">
+            <input placeholder="Search..." class="search-input" />
+            <div class="search-icon">
+                <img src="image/mic.png" width="28px" height="30px">
+            </div>
+          </div>
+          <div class="nav-signin border">
+            <a href="#" class="nav-second">Log in</a>
+          </div>
+          <div class="nav-signin border signup">
+            <a href="#" class="nav-second">Register</a>
+            <!-- <p class="nav-second">& Orders</p> -->
+          </div>
+          <div class="nav-cart border">
+            <!-- <a href="index.html"><i class="fa-solid fa-cart-plus"></i></a>
+            Shop More -->
+            <div class="notification" > 
+                <span><i class="fa-solid fa-cart-shopping" onclick="addMore()"></i>
+                </span>
+                <span class="badge">0</span>
+              </div>
+              Shop More
+          </div>
+        </div>
+        <!-- second navbar -->
+        <div class="panel">
+          <!-- <div class="panel-all border">
+            <i class="fa-solid fa-bars"></i>
+            All
+          </div> -->
+          <div class="panel-option">
+            <a href="#">
+            <img src="image/mobiles.svg">  
+            </a>
+            <p>Mobiles</p>        
+          </div>
+          <div class="panel-option">
+            <a href="#">
+            <img src="image/smart-watches.svg">  
+            </a> 
+            <p>Smart Watches</p>         
+          </div>
+          <div class="panel-option">
+            <a href="#">
+            <img src="image/wireless-earbuds.svg">   
+            </a>
+            <p>Wireless Earbuds</p>         
+          </div>
+          <div class="panel-option">
+            <a href="#">
+            <img src="image/bluetooth-speakers.svg">   
+            </a> 
+            <p>Bluetooth Speakers </p>        
+          </div>
+          <div class="panel-option">
+            <a href="#">
+            <img src="image/power-banks.svg"> 
+            </a>
+            <p>Power Banks</p>           
+          </div>
+          <div class="panel-option">
+            <a href="#">
+            <img src="image/mobile-chargers.svg">  
+            </a>
+            <p>Wall Chargers</p>          
+          </div>
+          <div class="panel-option">
+            <a href="#">
+            <img src="image/tablets.svg">  
+            </a> 
+            <p>Tablets</p>         
+          </div>
+          <div class="panel-option">
+            <a href="#">
+            <img src="image/trimmers-shaver.svg"> 
+            </a>
+            <p>Trimmers Shaver</p>           
+          </div>
+         
+        </div>
+      </header>
+      <!-- show items section -->
+      <div class="shop-section">
+        
+      </div>
+      <hr />
+      <!-- show grand total -->
+      <div class="divTotal">
+
+      </div>
+      <!-- footer section start -->
+      <footer>
+        <!-- <div class="footer-panel">Back to Top</div> -->
+        <div class="footer-panel2">
+          <div class="footer-head">  <img src="image/logo.svg" height="25px" id="footerLogo">
+          <ul>
+          
+            <a href="#">About Us</a>
+            <a href="#">FAQs</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Press & Blog</a>
+            <a href="#">Terms & Condition</a>
+          </ul>
+        </div>
+          <div class="footer-head">  <p>Customer Service</p>
+          <ul>
+          
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Installments Plan</a>
+            <a href="#">E-Warranty Activation</a>
+          </ul>
+        </div>
+          <div class="footer-head"> <p>Secure Payments Methods</p>
+          <ul>
+            <img src="image/payment_method.svg" width="270px" height="28px"><br>
+            <img src="image/googleplay.png" width="160px" height="60px">
+          </ul>
+        </div>
+        </div>
+       
+        <div class="footer-panel4">
+          <div class="copyright">
+            Copyright © 2024 Priceoye.pk
+          </div>
+          <div class="social">
+            <img src="image/footer/social-youtube.svg">
+            <img src="image/footer/social-fb.svg">
+            <img src="image/footer/social-instagram.svg">
+            <img src="image/footer/tiktok.svg">
+          </div>
+        </div>
+      </footer>
+<!-- checkout form -->
+      <div id="id01" class="modal">
+        <div class="row">
+            <div class="col-75">
+                <div class="container">
+                    <form id="formSubmit">
+                        <div class="row">
+                        <div class="col-50">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <h3>Billing Address</h3>
+                      <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your full name" required>
+                      <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                      <input type="email" id="email" name="email" placeholder="abc@example.com" required>
+                      <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                      <input type="text" id="adr" name="address" placeholder="Your address">
+                      <label for="city"><i class="fa fa-institution"></i> City</label>
+                      <input type="text" id="city" name="city" placeholder="Your City">
+          
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="state">State</label>
+                          <input type="text" id="state" name="state" placeholder="state">
+                        </div>
+                        <div class="col-50">
+                          <label for="zip">Zip</label>
+                          <input type="text" id="zip" name="zip" placeholder="10001">
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-50">
+                      <h3>Payment</h3>
+                      <label for="fname">Accepted Cards</label>
+                      <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                      </div>
+                      <label for="cname">Name on Card</label>
+                      <input type="text" id="cname" name="cardname" placeholder="Name">
+                      <label for="ccnum">Credit card number</label>
+                      <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                      <label for="expmonth">Exp Month</label>
+                      <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="expyear">Exp Year</label>
+                          <input type="text" id="expyear" name="expyear" placeholder="2018">
+                        </div>
+                        <div class="col-50">
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv" placeholder="352">
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                  </label>
+                  <input type="submit" value="Continue to checkout" class="btnchk">
+                </form>
+              </div>
+            </div>
+      </div>
+
+
+<script src="checkout.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+</body>
+
+</html>
