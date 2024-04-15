@@ -93,7 +93,7 @@ function render() {
     showDetails.innerHTML += ` 
   <div class="box1 box boxHover">
   <div class="box-content">
-    <img src="image/products/${phone.image}"/>
+    <img src="./image/Products/${phone.image}"/>
     <p> ${phone.brand} ${phone.model}</p>
     <p> ${phone.ram}GB RAM | ${phone.rom} GB ROM </p>
     <p>${phone.camera}</p>
