@@ -21,7 +21,7 @@ function render() {
       showDetails.innerHTML += ` 
   <div class="box11 box">
   <div class="imge">
-    <img src="image/products/${ele.image}"  />
+    <img src="./image/Products/${ele.image}"  />
     </div>
     <div class="itemsDescription">
     <p><b>Brand:</b> ${ele.brand} ${ele.model}</p>
