@@ -63,7 +63,7 @@ const phones = [
   },
   {
     id: 7,
-    image: "vivo.png",
+    image: "vivoy20.webp",
     brand: "Vivo",
     model: "y20",
     ram: 4,
