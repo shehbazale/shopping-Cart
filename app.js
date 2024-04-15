@@ -3,7 +3,7 @@ const counter = document.querySelector(".badge");
 const phones = [
   {
     id: 1,
-    image: "infinix-note-40-pro.webp",
+    image: "samsung.webp",
     brand: "Samsung",
     model: "S20",
     ram: 8,
@@ -13,7 +13,7 @@ const phones = [
   },
   {
     id: 2,
-    image: "oppo-reno-11-5g.webp",
+    image: "xiominote10.webp",
     brand: "Xiomi",
     model: "note10",
     ram: 4,
@@ -23,7 +23,7 @@ const phones = [
   },
   {
     id: 3,
-    image: "oppo-reno-11f-5g.webp",
+    image: "infinix40pro.webp",
     brand: "Infinix",
     model: "z10",
     ram: 2,
@@ -33,7 +33,7 @@ const phones = [
   },
   {
     id: 4,
-    image: "samsung-galaxy-a05s.webp",
+    image: "techspark.webp",
     brand: "Tecno",
     model: "spark10",
     ram: 12,
@@ -43,7 +43,7 @@ const phones = [
   },
   {
     id: 5,
-    image: "tecno-spark-10-pro.webp",
+    image: "iphone.webp",
     brand: "Iphone",
     model: "14",
     ram: 4,
@@ -53,7 +53,7 @@ const phones = [
   },
   {
     id: 6,
-    image: "xiaomi-redmi-12.webp",
+    image: "oppof11.webp",
     brand: "Oppo",
     model: "F11",
     ram: 8,
@@ -63,7 +63,7 @@ const phones = [
   },
   {
     id: 7,
-    image: "xiaomi-redmi-a3.webp",
+    image: "vivoy20.webp",
     brand: "Vivo",
     model: "y20",
     ram: 4,
@@ -73,7 +73,7 @@ const phones = [
   },
   {
     id: 8,
-    image: "tecno-spark-10-pro.webp",
+    image: "techs50.webp",
     brand: "Techo",
     model: "s50",
     ram: 50,
